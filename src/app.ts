@@ -1,8 +1,9 @@
-import { runTimer, stopTimer } from './stopWatch';
+import { StopWatch } from './stopWatch';
 
 document.addEventListener('DOMContentLoaded', function(){
     const startButton = document.getElementById("start") as HTMLDivElement;
     const stopButton = document.getElementById("stop") as HTMLDivElement;
+    const time = document.getElementById("time") as HTMLHeadingElement;
 
     startButton.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -16,11 +17,19 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 function onStartButtonClick(): void {
-    runTimer();
+    const watch = new StopWatch;
+    watch.start();
 }
 
 function onStopButtonClick(): void {
-    stopTimer();
+    const watch = new StopWatch;
+    watch.stop();
 }
+
+// function counterIncrements(): void {
+//     const watch = new StopWatch
+//     const number = watch.getTime();
+//     time.
+// }
 
 export { onStartButtonClick, onStopButtonClick };

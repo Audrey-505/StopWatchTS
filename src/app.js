@@ -5,6 +5,7 @@ var stopWatch_1 = require("./stopWatch");
 document.addEventListener('DOMContentLoaded', function () {
     var startButton = document.getElementById("start");
     var stopButton = document.getElementById("stop");
+    var time = document.getElementById("time");
     startButton.addEventListener('submit', function (e) {
         e.preventDefault();
         onStartButtonClick();
@@ -15,10 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 function onStartButtonClick() {
-    (0, stopWatch_1.runTimer)();
+    var watch = new stopWatch_1.StopWatch;
+    watch.start();
 }
 exports.onStartButtonClick = onStartButtonClick;
 function onStopButtonClick() {
-    (0, stopWatch_1.stopTimer)();
+    var watch = new stopWatch_1.StopWatch;
+    watch.stop();
 }
 exports.onStopButtonClick = onStopButtonClick;
