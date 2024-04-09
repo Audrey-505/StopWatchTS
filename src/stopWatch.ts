@@ -1,3 +1,9 @@
-export function sum(a:number, b:number): number {
-    return a + b;
+function runTimer(): boolean {
+    return true;
 }
+
+function stopTimer(): boolean {
+    return true;
+}
+
+export { runTimer, stopTimer}

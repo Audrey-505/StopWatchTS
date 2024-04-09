@@ -1,6 +1,9 @@
-// import { sum } from './stopWatch';
-import { sum } from './stopWatch'; 
+import { runTimer, stopTimer } from './stopWatch'
 
-test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1,2)).toBe(3);
-});
+test('Does stop watch begin', () => {
+        expect(runTimer()).toBe(true);
+})
+
+test('Does stop watch stop', () => {
+    expect(stopTimer()).toBe(true);
+})
