@@ -1,4 +1,4 @@
-class StopWatch {
+export class StopWatch {
     private startTime: number;
     private isRunning: boolean;
 
@@ -33,6 +33,9 @@ class StopWatch {
     }
 }
 
+
+
+
 // function runTimer(): number {
 //     const start = Date.now();
 //     const millis = Date.now() - start;
@@ -44,4 +47,3 @@ class StopWatch {
 //     return true;
 // }
 
-export { StopWatch }

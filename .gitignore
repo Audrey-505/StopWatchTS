@@ -156,3 +156,6 @@ dist
 # Ignore all local history of files
 .history
 .ionide
+
+# Ignore js files
+*.js
