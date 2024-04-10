@@ -1,4 +1,4 @@
-class StopWatch {
+  export class StopWatch {
     private startTime: number;
     private isRunning: boolean;
 
@@ -7,14 +7,14 @@ class StopWatch {
         this.isRunning = false;
     }
 
-    start(): void {
+     start(): void {
         if(!this.isRunning){
             this.startTime = Date.now();
             this.isRunning = true;
         }
     }
 
-    stop(): void {
+     stop(): void {
         if(this.isRunning) {
             this.isRunning = false;
         }
@@ -32,16 +32,3 @@ class StopWatch {
         }
     }
 }
-
-// function runTimer(): number {
-//     const start = Date.now();
-//     const millis = Date.now() - start;
-//     const time = Math.floor(millis / 1000);
-//     return time;
-// }
-
-// function stopTimer(): boolean {
-//     return true;
-// }
-
-export { StopWatch }
